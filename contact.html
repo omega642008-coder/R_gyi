@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style>
+		 ul li{
+			list-style: none;
+			display: inline-flex;
+			padding: 10px;
+		}
+		    ul li a{
+			text-decoration: none;
+			color: black;
+		}
+		
+		    .logo{
+			padding: 10px;
+			margin-top: 1px;
+		}
+		    .nav .logo{
+			float: left;
+		}
+		
+		*{
+			margin: 0px;
+		}
+		    ul li a{
+		 	color: black;
+			margin-left: 50px;
+         margin-top: 5px;
+		}
+		   .logo{
+			font-family: Times New Roman;
+			font-size: big;
+
+		}
+		    ul li a:hover{
+		    color: red;
+		}
+		   .nav{
+	       margin-left: 200px;
+	   }
+	    .icon{
+	       display: inline-flex;
+	       margin-top: 10px;
+	       margin-left: 80px;
+	       gap: 20px;
+	       text-decoration: none;
+	       color: black;
+        }
+           .icon:hover{
+           color: red;
+        }
+        .text{
+			float: right;
+			margin-right: 20px;
+            margin: 20px;
+            margin-top: 5px;
+           text-decoration: none;
+            color: black;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 5px;
+            width: 80px;
+            height: 20px;
+        }
+            .text:hover{
+            	color: red;
+            }
+        .all{
+        	margin: 10px;
+        }
+        .video{
+               margin-top: 20px;
+               width: 100%;
+               object-fit: cover;
+               height: 250px;
+            }
+             .video-wrapper{
+            position: relative;
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+            }
+            .video-text{
+           position: absolute;
+           color: white;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           top: 0;
+           left: 0;
+           z-index: 1;
+           margin-top: 120px;
+           margin-left: 580px;
+            }
+            .title{
+               font-weight: bold;
+               letter-spacing: 2px;
+               text-transform: uppercase;
+               font-family: sans-serif;
+            }
+        
+        .text3{
+           letter-spacing: 2px;
+           max-width: 470px;
+	        text-align: justify;
+	        line-height: 1;
+         }
+         .text4, .text5, .text6, .text7{
+         	background-color: #ffffff;
+         	border: 1px solid #eaeaea;
+         	border-radius: 16px;
+         	padding: 10px ;
+         	margin-bottom: 16px;
+         	box-sizing: border-box;
+         	margin-top: 10px;
+         }
+         .text7{
+         	margin-bottom: 0;
+         }
+         .text4 p, .text5 p, .text6 p, .text7 p{
+         	color: #999999;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.8px;
+            margin: 6px ;
+            text-transform: uppercase;
+         }
+         .text4 span, .text5 span, .text6 span, .text7 span{
+         	color: #222222;
+            font-size: 15px;
+            line-height: 1.4;
+            display: inline-block;
+            margin-left: 10px;
+         }
+         .all2{
+         	background-color: #ffffff;
+            width: 100%;
+            max-width: 440px;
+            padding:  25px;
+            border-radius: 24px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+            box-sizing: border-box;
+            margin-left: 50px;
+         }
+         .text7 span {
+            color: #d96b27;
+         }
+        .text6:hover{
+         	border-color: orange;
+         } 
+        .text5:hover{
+         	border-color: orange;
+         } 
+        .text4:hover{
+         	border-color: orange;
+         } 
+        .text7:hover{
+         	border-color: orange;
+         } 
+       
+        .map {
+            position: relative;
+            width: 600px;
+            height: 450px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            overflow: hidden;
+            float: right;   
+         }
+         .location {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: #222;
+            color: #fff;
+            padding: 10px;
+         }
+         .map-view, .map-view iframe {
+            width: 100%;
+            height: 100%;
+         }
+         .map-action-btn {
+           position: absolute;
+           bottom: 15px;
+           right: 15px;
+           background: #e66a15;
+           color: #fff;
+           padding: 10px 20px;
+           text-decoration: none;
+           border-radius: 20px;
+           margin-right: 35px;
+           padding: 15px;
+         }
+         .location{
+           position: absolute;
+           top: 20px;
+           left: 20px;
+           z-index: 10;
+           background-color: #222222;
+           padding: 12px 20px;
+           border-radius: 10px;
+           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+         }
+         .location .address{
+           color: #e66a15;
+           font-size: 15px;
+           font-weight: 600;
+           margin: 0;
+           letter-spacing: 0.3px;
+    
+          }
+         .master{
+           display: flex;
+           flex-wrap: wrap;
+           gap: 80px;
+           margin-top: 50px;
+
+         }
+         .footer{
+         margin-top: 100px;
+         background: black;
+         width: 100%;
+         color: white;
+         padding: 40px 0px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-direction: column;
+         gap: 20px;
+         box-sizing: border-box;
+            }
+            .icon3, .icon4{
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: center;
+
+            }
+            .footer a{
+               color: white;
+               text-decoration: none;
+               display: inline-flex;
+               align-items: center;
+               gap: 8px;
+            }
+            .footer:hover{
+               color:#e66a15 ;
+            }
+            .all3{
+               font-size: 14px;
+               color: #bbb;
+               margin-top: 10px;
+            }
+            *{
+               cursor: pointer;
+            }
+            .icon .one{
+         text-decoration: none;
+         color: black;
+        }
+
+        .icon .one:hover{
+         color: red;
+        }
+        .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2d3748;
+}
+
+.logo span {
+    color: #ff4757;
+}
+
+</style>
+</head>
+<body>
+<div class="all">
+    <div class="nav">
+    	<div class="logo">Bite<span>Dash</span></div>
+    	<ul>
+    		<li><a href="menu.html">Menu</a></li>
+    		<li><a href="about.html">About</a></li>
+    		<li><a href="order.html">Orders</a></li>
+    		<li><a href="order.html">Delivery</a></li>
+    		<li><a href="contact.html">Contact</a></li>
+    		<a href="index.html"><p class="text">Log Out</p></a>
+    		<div class="icon">
+    	<a href="order.html" class="one"><i class="fa-sharp fa-solid fa-basket-shopping"></i></a>
+    	</div>
+    </ul>
+</div>
+</div>
+
+<div class="video-wrapper">
+       <div class="video-text">
+      <h1 class="title">CONTACT US</h1>
+    </div>
+    <video autoplay muted loop class="video">
+      <source src="images/video4.mp4" type="video/mp4">
+    </video>
+</div>
+
+<div class="master">
+<div class="all2">
+	<h1 class="text2">We're here to help</h1>
+	<p class="text3">Contact our team or visit our Yangon office during service hours</p>
+	<div class="text4">
+    <p >PHONE NUMBER</p>
+    <span>+95-9447158081</span>
+    </div>
+    <div class="text5">
+    <p>DETAIL ADDRESS</p>
+    <span>Southeast Asia(Myanmar),Yangon(South Okkalapa)</span>
+    </div>
+    <div class="text6">
+    <p>SERVICE TIME</p>
+    <span>Daily 6:00 AM to 5:00 PM</span>
+    </div>
+    <div class="text7">
+    <p> FACEBOOK</p>
+    <span>Foodydeliverymm</span>
+</div>
+</div>
+<div class="map">
+   <div class="location">
+      <p class="address">South okkalapa,Township</p>
+   </div>
+   <div class="map view">
+      <iframe
+       src= "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d923.9476968867688!2d96.16985838385176!3d16.85603166153606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smm!4v1792606747632!5m2!1sen!2smm"
+       width="600"
+       height="450"
+       style="border:0;"
+       allowfullscreen="" 
+       loading="lazy"
+       referrerpolicy="strict-origin-when-cross-origin">
+      </iframe>
+   </div>
+   <a href="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d923.9476968867688!2d96.16985838385176!3d16.85603166153606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smm!4v1792606747632!5m2!1sen!2smm" target="_blank" class="map-action-btn">
+      Open on Google map
+   </a>
+</div>
+</div>
+<div class="footer">
+      <div class="icon3">
+         
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <span>Facebook</span>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <span>Instagram</span>
+            <a href=""><i class="fa-brands fa-square-youtube"></i></a>
+            <span>Youtube</span>
+         
+      </div>
+            <div class="icon4">
+               
+            <a href=""><i class="fa-solid fa-envelope"></i></a>
+            <span>Arrthitzaw8t@gmail.com</span>
+               <a href=""><i class="fa-sharp fa-solid fa-phone"></i></a>
+               <span>+95-9447158081</span>
+               <a href=""><i class="fa-regular fa-location-dot"></i></a>
+               <span>SoutheastAsia Yangon</span>
+         
+</div>
+      <div class="all3">
+         &copy;Developed: By Arr thit zaw right reversed.
+      </div>
+   </div>
+
+</body>
+</html>
